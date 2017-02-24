@@ -7,9 +7,9 @@ var SandwichMaker = (function(maker) {
   var breadChoicePrice;
 
   // Augment the original object with another method
-  maker.addBread = function(meatChoice) {
+  maker.addBread = function(breadChoice) {
     
-	breadChoicePrice = breadPrices[meatChoice];
+	breadChoicePrice = breadPrices[breadChoice];
 
   };
 

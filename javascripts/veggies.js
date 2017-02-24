@@ -1,8 +1,8 @@
 // This SandwichMaker IIFE augments the original one
 var SandwichMaker = (function(maker) {
 
-  // Private variable to store the different meat prices
-  var veggiesPrices = {"turkey": 2.00, "ham": 2.50, "m-none": 0};
+  // Private variable to store the different veggie prices
+  var veggiesPrices = {"lettuce": 0.30, "tomato": 0.50, "v-none": 0};
 
   var veggiesChoicePrice;
 
@@ -13,7 +13,7 @@ var SandwichMaker = (function(maker) {
 
   };
 
-  maker.getVeggies = function(){
+  maker.getVeggiesPrice = function(){
 
   	return veggiesChoicePrice
 
