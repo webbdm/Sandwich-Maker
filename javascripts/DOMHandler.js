@@ -3,7 +3,7 @@ var finalSandwichPrice = 0;
 
 // Variable to hold topping that the user selects
 var selectedTopping;
-
+ 
 // Get a reference to the <select> element that has all the meat options
 
 var meatChooser = document.getElementById("meat"); //not going to work with "byName" because it becomes a nodelist

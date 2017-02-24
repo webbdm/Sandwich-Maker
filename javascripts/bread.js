@@ -2,7 +2,7 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var breadPrices = {"wheat": 1.00, "pretzel": 1.50, "none": 0};
+  var breadPrices = {"wheat": 1.00, "pretzel": 1.50, "b-none": 0};
 
   var breadChoicePrice;
 
