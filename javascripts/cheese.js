@@ -2,7 +2,7 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var cheesePrices = {"american": 2.00, "pepperjack": 2.50, "ch-none": 0};
+  var cheesePrices = {"american": 2.00, "pepperjack": 2.50, "ch-none": 0.00};
 
   var cheeseChoicePrice;
 

@@ -11,7 +11,9 @@ var breadChooser = document.getElementById("bread");
 var cheeseChooser = document.getElementById("cheese");
 var veggiesChooser = document.getElementById("veggies");
 var condimentsChoooser = document.getElementById("condiments");
+var button = document.getElementById('button');
 var summary = document.getElementById("summary");
+
 /* 
   A checkbox element broadcasts a change event, so you listen for it
   and get the value of the topping from your augmented IIFE
@@ -28,7 +30,7 @@ meatChooser.addEventListener("change", function(event) {
   SandwichMaker.addTopping(SandwichMaker.getMeatPrice());
 
 
-  console.log(event.target.value + " was selected" + " so price is now " + SandwichMaker.getTotalPrice());
+  summary.innerHTML += event.target.value + `<br>`;
 
 });
 
@@ -43,7 +45,7 @@ breadChooser.addEventListener("change", function(event) {
   SandwichMaker.addTopping(SandwichMaker.getBreadPrice());
 
 
-  console.log(event.target.value + " was selected" + " so price is now " + SandwichMaker.getTotalPrice());
+  summary.innerHTML += event.target.value + `<br>`;
 
 });
 
@@ -58,7 +60,7 @@ cheeseChooser.addEventListener("change", function(event) {
   SandwichMaker.addTopping(SandwichMaker.getCheesePrice());
 
 
-  console.log(event.target.value + " was selected" + " so price is now " + SandwichMaker.getTotalPrice());
+  summary.innerHTML += event.target.value + `<br>`;
 
 });
 
@@ -73,7 +75,7 @@ veggiesChooser.addEventListener("change", function(event) {
   SandwichMaker.addTopping(SandwichMaker.getVeggiesPrice());
 
 
-  console.log(event.target.value + " was selected" + " so price is now " + SandwichMaker.getTotalPrice());
+  summary.innerHTML += event.target.value + `<br>`;
 
 });
 
@@ -88,6 +90,18 @@ condimentsChoooser.addEventListener("change", function(event) {
   SandwichMaker.addTopping(SandwichMaker.getCondimentsPrice());
 
 
-  console.log(event.target.value + " was selected" + " so price is now " + SandwichMaker.getTotalPrice());
+  summary.innerHTML += event.target.value + `<br>`;
 
 });
+
+button.addEventListener("click", function(event) {
+
+  summary.innerHTML += `<p>Your Total is: </p>` + (SandwichMaker.getTotalPrice()).toFixed(2);
+
+
+});
+
+
+
+
+

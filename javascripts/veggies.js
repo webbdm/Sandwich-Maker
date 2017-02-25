@@ -2,7 +2,7 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different veggie prices
-  var veggiesPrices = {"lettuce": 0.30, "tomato": 0.50, "v-none": 0};
+  var veggiesPrices = {"lettuce": 0.30, "tomato": 0.50, "v-none": 0.00};
 
   var veggiesChoicePrice;
 
