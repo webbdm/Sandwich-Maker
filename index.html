@@ -2,10 +2,61 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Sandwich Maker</title>
   </head>
   <body>
- 	
-  <script type="text/javascript" src="SandwichMaker.js"></script> 
+	
+  <fieldset class="options">
+  	
+    <h1>Bread</h1>
+    <div id="bread">
+    		<input type="radio" name="bread" id="wheat" value="wheat">Wheat
+        <input type="radio" name="bread" id="pretzel" value="pretzel">Pretzel
+        <input type="radio" name="bread" id="b-none" value="b-none">No Bread
+    </div>
+
+    <h1>Meat</h1>
+    <div id="meat">
+        <input type="checkbox" name="meat" id="turkey" value="turkey">Turkey
+        <input type="checkbox" name="meat" id="ham" value="ham">Ham
+        <input type="checkbox" name="meat" id="m-none" value="m-none">No Meat
+    </div>
+
+    <h1>Cheese</h1>
+    <div id="cheese">
+        <input type="checkbox" name="cheese" id="american" value="american">American
+        <input type="checkbox" name="cheese" id="pepperjack" value="pepperjack">Pepperjack
+        <input type="checkbox" name="cheese" id="ch-none" value="ch-none">No Cheese
+    </div>
+
+    <h1>Veggies</h1>
+    <div id="veggies">
+        <input type="checkbox" name="veggies" id="lettuce" value="lettuce">Lettuce
+        <input type="checkbox" name="veggies" id="tomato" value="tomato">Tomato
+        <input type="checkbox" name="veggies" id="v-none" value="v-none">No Veggies
+    </div>
+
+    <h1>Condiments</h1>
+    <div id="condiments">
+        <input type="checkbox" name="condiments" id="mustard" value="mustard">Mustard
+        <input type="checkbox" name="condiments" id="mayo" value="mayo">Mayo
+        <input type="checkbox" name="condiments" id="c-none" value="c-none">None
+    </div>
+
+  </fieldset>
+
+
+  <button type="button" id="button">Sandwich</button>
+  <div id="summary"></div>
+
+
+
+  <script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+  <script type="text/javascript" src="javascripts/Meat.js"></script>
+  <script type="text/javascript" src="javascripts/Bread.js"></script>
+  <script type="text/javascript" src="javascripts/cheese.js"></script>
+  <script type="text/javascript" src="javascripts/veggies.js"></script>
+  <script type="text/javascript" src="javascripts/condiments.js"></script>
+  <script type="text/javascript" src="javascripts/DOMHandler.js"></script>  
   </body>
 </html>
